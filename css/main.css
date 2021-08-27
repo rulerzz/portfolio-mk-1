@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,400;1,600&display=swap');
+/* Preloader */
+
+.none {
+    display: none;
+}
+
+.main-content {
+    transition: opacity 3s ease-in-out;
+}
+
+.bar {
+    position: relative;
+    height: 2px;
+    width: 500px;
+    margin: 0 auto;
+    background: #fff;
+    margin-top: 150px;
+}
+
+.circle {
+    position: absolute;
+    top: -30px;
+    margin-left: -30px;
+    height: 60px;
+    width: 60px;
+    left: 0;
+    background: #fff;
+    border-radius: 30%;
+    -webkit-animation: move 5s infinite;
+}
+
+.relative {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.text {
+    position: absolute;
+    top: -25px;
+    right: -85px;
+    text-transform: uppercase;
+    color: #493b31;
+    font-family: helvetica, sans-serif;
+    font-weight: bold;
+}
+
+@-webkit-keyframes move {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 100%;
+        -webkit-transform: rotate(450deg);
+        width: 150px;
+        height: 150px;
+    }
+    75% {
+        left: 100%;
+        -webkit-transform: rotate(450deg);
+        width: 150px;
+        height: 150px;
+    }
+    100 {
+        right: 100%;
+    }
+}
+
+.primary {
+    background: #493b31;
+}
+
+.secondary {
+    background: #A98467;
+}
+
+.tertiary {
+    background: #ADC178;
+}
+
+.light {
+    background: #DDE5B6;
+}
+
+.highlight {
+    background: #F0EAD2;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.screen {
+    height: 100vh;
+    position: relative;
+    padding-left: 4.42708vw;
+    padding-right: 4.42708vw;
+}
+
+.bg-2 {
+    background: #F0EAD2;
+}
+
+.color-1 {
+    color: #F0EAD2;
+}
+
+.color-2 {
+    color: #493b31;
+}
+
+.navbar-brand {
+    font-family: 'IBM Plex Serif', serif;
+    color: #F0EAD2 !important;
+    font-size: 1.6rem;
+}
+
+.nav-link {
+    font-family: 'IBM Plex Serif', serif;
+    color: #F0EAD2 !important;
+}
+
+.marginfix {
+    margin-left: auto;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: #DDE5B6;
+    color: #DDE5B6;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url('../images/hamburger.svg');
+}
+
+.navbar-toggler span {
+    transition: 0.3s;
+}
+
+.navbar-toggler.open span {
+    transform: rotate(90deg) translateX(-35px);
+}
+
+.navbar-toggler.open span::after {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 30px;
+    background-image: url('../images/hamburger-open.png');
+    position: absolute;
+    left: 35px;
+    background-size: contain;
+    transition: 0.3s;
+}
+
+.navbar {
+    border-bottom: 1px solid #8a866e;
+}
+
+.textone {
+    font-weight: 400;
+    line-height: 1.5em;
+    font-size: 1.04167vw;
+    font-family: 'IBM Plex Serif', serif;
+    margin-left: 0;
+    padding: 80px 0 80px 0;
+}
+
+.texttwo {
+    font-weight: 300;
+    font-size: 4.94792vw;
+    line-height: 1.15em;
+    text-transform: uppercase;
+    font-family: 'IBM Plex Serif', serif;
+    padding: 0px;
+    width: 64.73958vw;
+    margin-top: 3.76042vw;
+    margin-left: 0;
+}
+
+.texttwov2 {
+    font-weight: 300;
+    font-size: 4.94792vw;
+    line-height: 1.15em;
+    text-transform: uppercase;
+    font-family: 'IBM Plex Serif', serif;
+    padding: 0px;
+    margin-left: 0;
+    margin-bottom: 0 !important;
+}
+
+#video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-width: 100%;
+    z-index: -1;
+    filter: blur(5px);
+}
+
+.fireworks {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.section__line {
+    width: 100%;
+    height: 1px;
+    background-color: #999;
+}
+
+.marginer {
+    margin-bottom: calc(21.08738px + .7767vw);
+}
+
+.textfloat {
+    font-weight: 400;
+    line-height: 1.5em;
+    font-size: 1.04167vw;
+    font-family: 'IBM Plex Serif', serif;
+    position: absolute;
+    bottom: 0px;
+}
+.blocktwo{
+    margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 600px) {}
+
+@media only screen and (max-width: 600px) {}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 992px) {
+    .nav-link {
+        text-align: center;
+        background-color: #A98467;
+        margin: 5px 0 5px 0;
+    }
+    .nav-link:hover {
+        background-color: #ADC178;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .nav-link {
+        transition: 0.3s;
+    }
+    .nav-link:hover {
+        background-color: #ADC178;
+    }
+}
+
+@media only screen and (max-width: 1200px) {}
